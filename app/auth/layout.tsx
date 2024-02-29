@@ -2,8 +2,7 @@ import React from 'react';
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-      <div className="bg-red-500 text-yellow-500"> This is a Navbar</div>
+    <div className="h-full flex items-center text-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-customBg to-customBg2">
       {children}
     </div>
   );
