@@ -37,9 +37,9 @@ export default auth((req) => {
 
   if (
     !isLoggedIn &&
-    !isPublicRoute &&
+    !isPublicRoute /* &&
     nextUrl.pathname !== '/auth/login' &&
-    nextUrl.pathname !== '/auth/register'
+    nextUrl.pathname !== '/auth/register' */
   ) {
     return Response.redirect(new URL('/auth/login', nextUrl)); // we pass nextUrl to make is
   }
